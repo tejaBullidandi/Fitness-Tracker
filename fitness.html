@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fitness Tracker</title>
+	<link rel="stylesheet" href="fitness.css">
+</head>
+<body>
+	<div class="container">
+	<h1>	Fitness Tracker</h1>
+	<form id="activity-form">
+		<label for="day">Select day:</label>
+		<select id="day" name="day">
+			<option></option>
+		<option value="monday">Monday</option>
+		<option value="tuesday">tuesday</option>
+		<option value="wednesday">Wednesday</option>
+		<option value="thursday">Thursday</option>
+		<option value="friday">Friday</option>
+		<option value="saturday">Saturday</option>
+		<option value="sunday">Sunday</option>
+		</select>
+		<div id="activity-options" style="display:block;">
+			<label for="activity">Choose activity</label>
+			<select id="activity" name="activity">
+				<option></option>
+				<option value="running">Running</option>
+				<option value="Cycling">Cycling</option>
+				<option value="swimmimg">Swimming</option>
+				<option value="weightlifting">weightlifting</option>
+				<option value="saturday">yoga</option>
+				</select>
+	</div>
+	<label for="duration">Duration (minutes):</label>
+	<input type="number" id="duration" name="duration" min="1" required>
+	<button type="submit">Log Activity</button>
+	</form>
+	<div id="activity-log">
+		<h2>Activity Log</h2>
+		<ul id="log-list"></ul>
+		</div>
+		</div>
+		<script src="fitness.js"></script>
+</body>
+</html>
